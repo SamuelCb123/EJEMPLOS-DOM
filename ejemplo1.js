@@ -7,7 +7,7 @@ const body2 = document.body.childNodes;//esta propiedad retorna todos los nodos 
 console.log(body2);
 
 
-const body3 = document.body.childNodes[1];//retorna el nodo de la posicion elegifa y los hijos de esta
+const body3 = document.body.childNodes[1];//retorna el nodo de la posicion elegifa y los hijos de estaASASAS
 console.log(body3.childNodes);
 
 const body4 = document.body.children;//me imprime nodos tipo elemento?? 
