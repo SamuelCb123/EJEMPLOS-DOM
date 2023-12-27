@@ -4,8 +4,6 @@ const body = document.body;//acceso a los nodos superiores de esta manera solo s
 console.log(body);
 
 
-
-
 const body2 = document.body.childNodes;//acede a todos los nodos hijos de un nodo padre en este caso todos son hijos de body
 console.log(body2);
 
@@ -28,8 +26,38 @@ console.log(body7.firstChild);//esta devolviendo el primer hijo del segundo hijo
 const body8 = document.body.lastChild;//devuelve el ultimo nodo del padre
 console.log(body8);
 
-const body9 = document.body.firstElementChild;
+const body9 = document.body.firstElementChild;//devuelve el primer nodo tipo elemento de manera idependiente de los espacios
 console.log(body9);
 
-const body10 = document.body.lastElementChild;
+const body10 = document.body.lastElementChild;//devuelve el ultimo nodo tipo elemento
 console.log(body10)
+
+const body11 = document.body.childNodes[0];//devolvera true o false dependiendo de si tiene hijos o no 
+console.log(body11.hasChildNodes());
+
+const body12 = document.body.children[0];//primero accedo al div wrappaer, despues accedemos al hijo de este que es otro div,
+    //con la funcio nextsibling sabremos en  este caso el hermano del nodo actual en caso de que no tengamos nos devolvera un null
+const div = body12.children[1];
+console.log(div.nextSibling)
+
+const body13 = document.body.children[0];
+const div2 = body13.children[1];//igual que el ejemplo anterior pero nos va a retornar un nodotipo elemento 
+console.log(div2.nextElementSibling);
+
+const body14 = document.body.children[0];
+const div3 = body14.children[1];
+console.log(div3.previousSibling); //me retornara el hermano anterior al nodo actual.Me retorna cualquier tipo de nodo en este caso text porque hay espacios
+
+const body15 = document.body.children[0];
+const div4 = body15.children[1]; //igual que el ejemplo anterior pero el nodo que nos va a retornar es tipo elemento es decir no nos va a devolver uno tipo html
+console.log(div4.previousElementSibling);
+
+const body16 = document.body.children[0];//accedemos al div wrapper despues accedemos al hijo de este en este caso el div,despues del nodo div accederemos al
+const div5 = body16.children[1];      //con parent node acceremos al padre del nodo en el que nos encontremos
+const anchor = div.children[0];
+console.log(anchor.parentNode);
+
+const body17 = document.body.children[0];//accedemos al div wrapper despues accedemos al hijo de este en este caso el div,despues del nodo div accederemos al
+const div6 = body16.children[1];      //con parent node acceremos al padre del nodo en el que nos encontremos
+const anchor2 = div.children[0];
+console.log(anchor.parentElement);
