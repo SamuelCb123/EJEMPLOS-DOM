@@ -61,3 +61,16 @@ const body17 = document.body.children[0];//accedemos al div wrapper despues acce
 const div6 = body16.children[1];      //con parent node acceremos al padre del nodo en el que nos encontremos
 const anchor2 = div.children[0];
 console.log(anchor.parentElement);
+
+const body18 = document.getElementById("wrapper");
+console.log(body18)//accede a un elemento que contenga el id proporicionado 
+
+const body19 = document.getElementsByClassName("link"); //accedera a los elemento que contengan la clase proporcionada
+console.log(body19);
+
+const body20 = document.getElementsByTagName ("div");
+console.log(div); //retornara todos los elementos que coincidan con una etiqueta especifica
+
+
+const body21 = document.getElementsByName("telefono");//va a retornar una lista de nodos con  una lista de nodos que contengan se utiliza normalmnete para inputs
+console.log(body21);
