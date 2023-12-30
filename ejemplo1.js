@@ -1,5 +1,5 @@
 "use strict";
-const body = document.body;//acceso a los nodos superiores de esta manera solo se puede hacer para body,head,html
+/*const body = document.body;//acceso a los nodos superiores de esta manera solo se puede hacer para body,head,html
                             //y para doctype
 console.log(body);
 
@@ -74,3 +74,9 @@ console.log(div); //retornara todos los elementos que coincidan con una etiqueta
 
 const body21 = document.getElementsByName("telefono");//va a retornar una lista de nodos con  una lista de nodos que contengan se utiliza normalmnete para inputs
 console.log(body21);
+
+const body22 = document.querySelector(".wrapper") //selector css es decir podremos buscar un nodo especifico introduciendo tanto class, tanto como id, como por etiqueta nos va a devolver el primer elemento que encuentre con ello 
+console.log(body22);
+
+const body23 = document.querySelectorAll(".link");//a diferencia del ejemplo anterior me va a retornar a todos los elementos que tenga dicha clase, id..
+console.log(body23); */
